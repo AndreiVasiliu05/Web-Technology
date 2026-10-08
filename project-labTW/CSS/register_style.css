@@ -1,0 +1,180 @@
+html, body {
+    background: #28323e;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+.page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.card {
+    max-width: 550px;
+    width: 100%;
+    background: #1f2833;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+    border-top: 5px solid #3f6fb5;
+}
+
+h1 {
+    text-align: center;
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+.row {
+    margin-bottom: 16px;
+    text-align: left;
+}
+
+.row label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+fieldset {
+    border: 1px solid #3a4756;
+    border-radius: 8px;
+    padding: 10px 14px;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 14px;
+    padding: 0 6px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #3a4756;
+    background: #2c3846;
+    color: white;
+    font-size: 14px;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #3f6fb5;
+    box-shadow: 0 0 0 3px rgba(63, 111, 181, 0.35);
+}
+
+/* radio si checkbox nu trebuie sa ocupe toata latimea */
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+    accent-color: #3f6fb5;
+    margin-right: 5px;
+}
+
+.radio-group label,
+.checkbox-grid label,
+.terms label {
+    display: inline-flex;
+    align-items: center;
+    font-weight: normal;
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
+.radio-group {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.two-col {
+    display: flex;
+    gap: 12px;
+}
+
+.two-col > div {
+    flex: 1;
+}
+
+.checkbox-grid {
+    display: flex;
+    gap: 10px 20px;
+    flex-wrap: wrap;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    margin-top: 16px;
+}
+
+.btn {
+    flex: 1;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn.primary {
+    background: #3f6fb5;
+    border: none;
+    color: white;
+}
+
+.btn.primary:hover {
+    background: #2c5591;
+}
+
+.btn.ghost {
+    background: transparent;
+    border: 1px solid #3f6fb5;
+    color: #3f6fb5;
+}
+
+.btn.ghost:hover {
+    background: rgba(63, 111, 181, 0.15);
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.login-link a {
+    color: #3471B8;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    color: #5a93d6;
+}
+
+/* pe ecrane mici campurile pe doua coloane trec una sub alta */
+@media (max-width: 600px) {
+    .two-col {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .two-col > div {
+        margin-bottom: 16px;
+    }
+
+    .actions {
+        flex-direction: column;
+    }
+}

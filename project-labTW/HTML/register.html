@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Înregistrare</title>
+    <link rel="stylesheet" href="../CSS/register_style.css">
+</head>
+
+<body>
+    <main class="page">
+        <section class="card">
+            <h1>Creează cont</h1>
+
+            <form class="register-form" action="#" method="post" enctype="multipart/form-data">
+
+                <div class="row">
+                    <label for="username">Nume utilizator</label>
+                    <input type="text" id="username" name="username" placeholder="ex: Exemplu" required>
+                </div>
+
+                <div class="row">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="ex: nume@domeniu.ro" required>
+                </div>
+
+                <div class="row two-col">
+                    <div>
+                        <label for="password">Parolă</label>
+                        <input type="password" id="password" name="password" minlength="6" required>
+                    </div>
+                    <div>
+                        <label for="confirm_password">Confirmă parola</label>
+                        <input type="password" id="confirm_password" name="confirm_password" minlength="6" required>
+                    </div>
+                </div>
+
+                <div class="row two-col">
+                    <div>
+                        <label for="birthdate">Data nașterii</label>
+                        <input type="date" id="birthdate" name="birthdate" required>
+                    </div>
+                    <div>
+                        <label for="phone">Telefon</label>
+                        <input type="tel" id="phone" name="phone" placeholder="07xx xxx xxx">
+                    </div>
+                </div>
+
+                <fieldset class="row">
+                    <legend>Gen</legend>
+                    <div class="radio-group">
+                        <label><input type="radio" name="gender" value="male" required> Masculin</label>
+                        <label><input type="radio" name="gender" value="female"> Feminin</label>
+                        <label><input type="radio" name="gender" value="other"> Altul</label>
+                    </div>
+                </fieldset>
+
+                <div class="row">
+                    <label for="country">Țara</label>
+                    <select id="country" name="country" required>
+                        <option value="">-- Alege țara --</option>
+                        <option value="ro">România</option>
+                        <option value="md">Republica Moldova</option>
+                        <option value="de">Germania</option>
+                        <option value="it">Italia</option>
+                        <option value="other">Alta</option>
+                    </select>
+                </div>
+
+                <fieldset class="row">
+                    <legend>Interese</legend>
+                    <div class="checkbox-grid">
+                        <label><input type="checkbox" name="interests" value="web"> Web</label>
+                        <label><input type="checkbox" name="interests" value="ai"> AI</label>
+                        <label><input type="checkbox" name="interests" value="robotics"> Robotică</label>
+                        <label><input type="checkbox" name="interests" value="security"> Securitate</label>
+                        <label><input type="checkbox" name="interests" value="gaming"> Gaming</label>
+                    </div>
+                </fieldset>
+
+                <div class="row">
+                    <label for="avatar">Poză de profil</label>
+                    <input type="file" id="avatar" name="avatar" accept="image/*">
+                </div>
+
+                <div class="row">
+                    <label for="bio">Despre tine</label>
+                    <textarea id="bio" name="bio" rows="3" placeholder="Câteva cuvinte despre tine..."></textarea>
+                </div>
+
+                <div class="row terms">
+                    <label><input type="checkbox" name="terms" required> Accept termenii și condițiile</label>
+                </div>
+
+                <div class="actions">
+                    <button type="submit" class="btn primary">Înregistrează-te</button>
+                    <button type="reset" class="btn ghost">Resetează</button>
+                </div>
+
+                <p class="login-link">Ai deja cont?
+                    <a href="login.html">Mergi la login</a>
+                </p>
+
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
