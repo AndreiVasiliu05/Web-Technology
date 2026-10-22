@@ -163,7 +163,6 @@ input[type="checkbox"] {
     color: #5a93d6;
 }
 
-/* pe ecrane mici campurile pe doua coloane trec una sub alta */
 @media (max-width: 600px) {
     .two-col {
         flex-direction: column;

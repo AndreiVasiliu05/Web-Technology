@@ -1,0 +1,27 @@
+body {
+background-color: #28323e;
+display: flex;
+justify-content: center;
+align-items: center;
+height: ...;
+margin: 0;
+
+flex-direction: column;
+}
+.chat-container {
+max-width: ...;
+width: ...;
+height: ...;
+padding: ...;
+background-color: ...;
+border-radius: ...;
+box-shadow: ...;
+margin-bottom: ...;
+overflow-y: ...;
+}
+.message {
+margin-bottom: ...;
+}
+#chat-form {
+display: flex;
+}
